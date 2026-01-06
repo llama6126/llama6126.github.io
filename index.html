@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom 3D Prints | UK Made</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f7f7f7;
+      color: #222;
+    }
+    header {
+      background: white;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 600;
+    }
+    header p {
+      color: #666;
+    }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .product {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .product h3 {
+      margin: 0 0 0.5rem 0;
+    }
+    .product p {
+      flex-grow: 1;
+      color: #555;
+    }
+    .product button {
+      background: #222;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .product button:hover {
+      background: #000;
+    }
+    .info {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #777;
+      font-size: 0.9rem;
+    }
+    form {
+      display: grid;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    textarea { resize: vertical; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Custom 3D Printed Products</h1>
+  <p>Designed & printed in Chelmsford, UK</p>
+</header>
+
+<section>
+  <h2>Shop</h2>
+  <div class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/400x300" alt="Product" />
+      <h3>Desk Organizer</h3>
+      <p>Clean, functional desk organiser. Available in white, blue, or gold.</p>
+      <strong>£12.00</strong><br/><br/>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/400x300" alt="Product" />
+      <h3>Phone Stand</h3>
+      <p>Minimal phone stand suitable for desks or bedside tables.</p>
+      <strong>£8.00</strong><br/><br/>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<section class="info">
+  <h2>Production & Shipping</h2>
+  <p>
+    All items are printed to order on an Ender 3 V2 Neo. To ensure quality and reasonable turnaround,
+    production is capped at <strong>4 orders per day</strong>.
+  </p>
+  <p>
+    <strong>Estimated production time:</strong> 1–2 business days<br />
+    <strong>UK shipping:</strong> 1–3 business days via Royal Mail
+  </p>
+  <p>
+    Orders are shipped from Chelmsford, Essex.
+  </p>
+</section>
+
+<section class="info">
+  <h2>Custom Orders & Contact</h2>
+  <p>Need a custom size, colour, or a completely bespoke print? Send a message below.</p>
+  <form action="mailto:your@email.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your name" required />
+    <input type="email" name="email" placeholder="Your email" required />
+    <textarea name="message" rows="5" placeholder="Tell me what you need..." required></textarea>
+    <button type="submit">Send Email</button>
+  </form>
+</section>
+
+<footer>
+  © 2026 · UK Made 3D Prints
+</footer>
+
+</body>
+</html>
